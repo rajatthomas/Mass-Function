@@ -1,0 +1,61 @@
+% -----PARAMETRE FILE--------------------------
+% ---include your choice of 
+% ---(1) Cosmology
+% ---(2) Transfer Function
+% ---(3) Mass Function
+
+%--------Cosmology inputs ----------------------
+
+Omega_Lambda    0.738
+Omega_Baryon    0.04
+Omega_Matter	0.262
+
+Omega_Neutrino	0.0    
+%---- Density of massive neutrinos, in units of critical */ 
+degen_Neutrino	0
+%----- (Int) Number of degenerate massive neutrino species
+
+tilt		1.0 
+%--------The primordial power spectrum spectral index
+
+Sigma_8		0.751
+Hubble_z0	70.8
+h_z0		0.708
+
+
+%-------Transfer function inputs-----------------
+%-------- BBKS = Bond Bardeen Kaiser 
+%-------- EH = Eisenstein & Hu
+
+TranFuncType	EH
+
+%--------Mass Function inputs-------------------
+%---- PS = Press Schecter, 
+%---- ST = Sheth Tormen
+
+MassFuncType	PS
+
+%-------Redshifts for which you want the massfunc
+%-------and the mass bins and range
+z_start		10.0
+z_end		4.0
+z_stride        1.0
+
+mass_min	4.0
+mass_max	12.0
+mass_bins	1000
+
+
+%-------Variance calculation parametres---------
+%------(i) Select the method; 1. numerical, 2. spline
+%------(ii) filter, 1. top-hat, 2. gaussian, 3. sharp-k
+
+SigmaMethod	numerical
+SigmaFilter	top-hat
+
+
+%--------Switches to calculate (1) or not (0) ------
+%----- the mass function and/or moment
+
+CalcMoment      1 	
+CalcMassFunc 	0
