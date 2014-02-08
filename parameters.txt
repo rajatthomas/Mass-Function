@@ -57,5 +57,5 @@ SigmaFilter	top-hat
 %--------Switches to calculate (1) or not (0) ------
 %----- the mass function and/or moment
 
-CalcMoment      1 	
-CalcMassFunc 	0
+CalcMoment      0 	
+CalcMassFunc 	1

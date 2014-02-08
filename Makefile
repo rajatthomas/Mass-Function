@@ -26,8 +26,8 @@ OBJS   = main.o sigma.o cosmology.o \
 
 INCL   = proto.h  allvars.h Makefile
 
-GSL_INCL =  -I/data/users/harker/gsl-1.9/include 
-GSL_LIBS =  -L/data/users/harker/gsl-1.9/lib
+GSL_INCL =  -I/usr/local/include 
+GSL_LIBS =  -L/usr/local/lib
 
 
 CFLAGS = $(OPTIONS) $(GSL_INCL)

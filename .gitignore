@@ -1,3 +1,6 @@
+# Specific to this program
+*.dat
+
 # Global OSX kind of ignore files
 *~
 .DS_Store
