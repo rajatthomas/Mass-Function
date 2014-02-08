@@ -19,7 +19,7 @@ OPTIMIZE =  -O2 -Wall -g   # sets optimization and warning flags
 
 OPTIONS =  $(OPTIMIZE) $(OPT)
 
-EXEC   = massfunc
+EXEC   = massfunc.exe
 
 OBJS   = main.o sigma.o cosmology.o \
 	 allvars.o readparams.o moments.o
